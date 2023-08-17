@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+main,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+header {
+  background-color: #1f2937;
+  width: 80%;
+}
+
+form {
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+input,
+select,
+button {
+  cursor: pointer;
+}
+
+select,
+button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+}
+
+input {
+  width: 8rem;
+  height: 5rem;
+}
+
+select {
+  background-color: #1f293a;
+  color: white;
+  width: 50%;
+}
+
+button {
+  background-color: #3d4b60;
+  border: none;
+  color: white;
+}
+
+main {
+  align-items: initial;
+  width: 100%;
+  height: 80vh;
+}
+
+table {
+  width: 80%;
+  background-color: #1f2937;
+  border-collapse: collapse;
+}
+
+#row2 {
+  height: 10%;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.copyIcon:hover {
+  cursor: pointer;
+  color: aqua;
+  font-size: 2rem;
+}
+
+.loader {
+  color: #1ecf2c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  #row2,
+  select,
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #row2,
+  select,
+  button {
+    font-size: 1.2rem;
+  }
+  input,
+  select {
+    padding: 0.8rem 1rem;
+  }
+  select {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #row2,
+  select,
+  button {
+    font-size: 1rem;
+  }
+  input,
+  select {
+    padding: 0.5rem 0.7rem;
+  }
+  input {
+    width: 5rem;
+    height: 4rem;
+  }
+  select {
+    width: 20%;
+  }
+  button {
+    width: 30%;
+  }
+}

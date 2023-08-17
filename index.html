@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <form id="myForm">
+        <input type="color" id="color-input" value="#20cf2c" />
+        <select id="mode-selector" name="color">
+          <option default value="Monochrome">Monochrome</option>
+          <option value="Monochrome-dark">Monochrome-dark</option>
+          <option value="Monochrome-light">Monochrome-light</option>
+          <option value="Analogic">Analogic</option>
+          <option value="Complement">Complement</option>
+          <option value="Analogic-complement">Analogic-complement</option>
+          <option value="Triad">Triad</option>
+        </select>
+        <button id="get-color-btn">Get color scheme</button>
+      </form>
+    </header>
+    <main>
+      <div class="loader">Loading . . .</div>
+      <table id="color-table">
+        <tbody>
+          <tr id="row1"></tr>
+          <tr id="row2"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
