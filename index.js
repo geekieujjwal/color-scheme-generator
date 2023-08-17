@@ -43,7 +43,6 @@ function onSubmit(e) {
   row1.innerHTML = "";
   row2.innerHTML = "";
   getColor();
-  document.body.style.backgroundColor = "white";
 }
 
 async function copyToClipboard(text) {
